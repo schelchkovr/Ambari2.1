@@ -12,21 +12,21 @@ Preparing Docker Images
 1. Parent image: this container does basic preparation needed on all HDP cluster nodes - enabling password-less ssh, installing basic utility packages, setting environment variables, etc.
 
 ```
-cd dockerfiles/ambari_2.1_node
+cd ambari_2.1_node
 docker build -t hwxu/ambari_2.1_node .
 ```
 
 2. Ambari Server image: this container installs and runs the Ambari Server process, along with an Ambari Agent process. Blueprint installs are initiated from this container. This container also builds a local yum repository mirror for the HDP 2.2.4.2 packages (base CentOS packages are not currently mirrored), so creating this image will take some time. The local mirror is entirely optional and can be disabled/removed if desired.
 
 ```
-cd dockerfiles/ambari_2.1_server_node
+cd ../ambari_2.1_server_node
 docker build -t hwxu/ambari_2.1_server_node .
 ```
 
 3. Ambari Agent image: this container runs an Ambari Agent process, but no Ambari Server. For multi-node cluster deployments, all nodes except the node designated as the Ambari Server node will be based on this image.
  
 ```
-cd dockerfiles/ambari_2.1_agent_node
+cd ../ambari_2.1_agent_node
 docker build -t hwxu/ambari_2.1_agent_node .
 ```
 
