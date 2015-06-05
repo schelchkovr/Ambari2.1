@@ -16,6 +16,7 @@ RUN wget http://public-repo-1.hortonworks.com/HDP-LABS/Projects/Dal-Preview/2.3.
 #RUN createrepo /var/www/html/hdp/HDP-UTILS-1.1.0.20/
 
 # Install and configure Ambari server and agent
+RUN yum clean all
 RUN yum -y install ambari-server ambari-agent
 RUN ambari-server setup -s
 
