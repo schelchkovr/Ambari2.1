@@ -14,9 +14,6 @@
                     "name" : "PIG"
                 },
                 {
-                    "name" : "OOZIE_CLIENT"
-                },
-                {
                     "name" : "NAMENODE"
                 },
                 {
@@ -39,9 +36,6 @@
                 },
                 {
                     "name" : "TEZ_CLIENT"
-                },
-                {
-                    "name" : "SQOOP"
                 },
                 {
                     "name" : "YARN_CLIENT"
@@ -74,9 +68,6 @@
                     "name" : "HISTORYSERVER"
                 },
                 {
-                    "name" : "OOZIE_CLIENT"
-                },
-                {
                     "name" : "HCAT"
                 },
                 {
@@ -99,9 +90,6 @@
                 },
                 {
                     "name" : "TEZ_CLIENT"
-                },
-                {
-                    "name" : "SQOOP"
                 },
                 {
                     "name" : "YARN_CLIENT"
@@ -134,9 +122,6 @@
                     "name" : "PIG"
                 },
                 {
-                    "name" : "OOZIE_CLIENT"
-                },
-                {
                     "name" : "HCAT"
                 },
                 {
@@ -158,9 +143,6 @@
                     "name" : "HIVE_SERVER"
                 },
                 {
-                    "name" : "OOZIE_SERVER"
-                },
-                {
                     "name" : "SECONDARY_NAMENODE"
                 },
                 {
@@ -171,9 +153,6 @@
                 },
                 {
                     "name" : "METRICS_COLLECTOR"
-                },
-                {
-                    "name" : "SQOOP"
                 },
                 {
                     "name" : "YARN_CLIENT"
