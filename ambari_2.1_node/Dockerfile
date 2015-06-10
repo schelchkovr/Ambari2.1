@@ -44,8 +44,8 @@ RUN echo "source /etc/bashrc" >> /root/.bash_profile
 RUN echo "root:hadoop" | chpasswd
 
 # Add Java to the path
-RUN echo "export JAVA_HOME=/usr/jdk64/jdk1.7.0_67/" >> /etc/bashrc
-RUN echo "export PATH=/usr/jdk64/jdk1.7.0_67/bin:\$PATH" >> /etc/bashrc
+RUN echo "export JAVA_HOME=/usr/jdk64/jdk1.8.0_40/" >> /etc/bashrc
+RUN echo "export PATH=/usr/jdk64/jdk1.8.0_40/bin:\$PATH" >> /etc/bashrc
 
 # Increase the yum timeout for slow installs
 RUN sed -i "/\[main\]/a timeout=1800" /etc/yum.conf
