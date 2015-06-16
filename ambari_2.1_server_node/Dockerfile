@@ -6,7 +6,8 @@ RUN yum -y install httpd yum-utils createrepo
 RUN chkconfig httpd on
 #RUN wget http://public-repo-1.hortonworks.com/HDP/centos6/2.x/updates/2.2.4.2/hdp.repo -O /etc/yum.repos.d/hdp.repo
 #RUN wget http://public-repo-1.hortonworks.com/HDP-LABS/Projects/Dal-Preview/2.3.0.0-4/centos6/hdp.repo -O /etc/yum.repos.d/hdp.repo
-RUN wget http://s3.amazonaws.com/dev.hortonworks.com/HDP/centos6/2.x/updates/2.2.0.0/hdp.repo -O /etc/yum.repos.d/hdp.repo
+#RUN wget  http://s3.amazonaws.com/dev.hortonworks.com/HDP/centos6/2.x/updates/2.2.0.0/hdp.repo -O /etc/yum.repos.d/hdp.repo
+RUN wget -nv http://public-repo-1.hortonworks.com/HDP/centos6/2.x/GA/2.2.0.0/hdp.repo -O /etc/yum.repos.d/HDP.repo
 
 #RUN mkdir -p /var/www/html/hdp
 #RUN cd /var/www/html/hdp; reposync -r HDP-2.2.4.2
