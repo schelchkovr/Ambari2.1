@@ -12,6 +12,8 @@ RUN yum -y install nano vim
 RUN yum -y install sudo bind-utils zip
 
 # Configure the Ambari Repository for 2.1
+#RUN wget http://public-repo-1.hortonworks.com/HDP-LABS/Projects/Dal-Preview/ambari/2.1.0-4/centos6/ambari.repo -O /etc/yum.repos.d/ambari.repo
+
 RUN wget http://public-repo-1.hortonworks.com/HDP-LABS/Projects/Dal-Preview/ambari/2.1.0-4/centos6/ambari.repo -O /etc/yum.repos.d/ambari.repo
 
 # 2.0.1 repo was http://public-repo-1.hortonworks.com/ambari/centos6/2.x/updates/2.0.1/ambari.repo -O /etc/yum.repos.d/ambari.repo
