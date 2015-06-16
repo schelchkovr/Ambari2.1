@@ -21,7 +21,7 @@ RUN yum clean all
 RUN yum -y install ambari-server ambari-agent
 RUN ambari-server setup -s
 
-ADD scripts/ /root/scripts
+#ADD scripts/ /root/scripts
 ADD start-scripts/ /root/start-scripts 
 ADD blueprints/ /root/blueprints
 ADD repos /root/repos
