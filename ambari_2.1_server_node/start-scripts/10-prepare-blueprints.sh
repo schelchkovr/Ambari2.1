@@ -4,5 +4,5 @@
 sleep 20 
 
 #I am commenting this out so that the blueprints don't install. I want to do a wizard install
-#/root/scripts/install_cluster.sh $BLUEPRINT_BASE
+/root/scripts/install_cluster.sh $BLUEPRINT_BASE
 
