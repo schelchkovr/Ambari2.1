@@ -10,7 +10,7 @@ RUN mkdir -p /var/www/html/hdp
 RUN cd /var/www/html/hdp; reposync -r HDP-2.3.0.0
 RUN cd /var/www/html/hdp; reposync -r HDP-UTILS-1.1.0.20
 RUN mkdir /etc/yum.repos.d/save
-RUN mv /etc/yum.repos.d/hdp.repo /etc/yum.repos.d/save
+RUN mv /etc/yum.repos.d/HDP.repo /etc/yum.repos.d/save
 RUN createrepo /var/www/html/hdp/HDP-2.3.0.0/
 RUN createrepo /var/www/html/hdp/HDP-UTILS-1.1.0.20/
 
