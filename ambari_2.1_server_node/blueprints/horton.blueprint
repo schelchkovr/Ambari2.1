@@ -60,6 +60,9 @@
                 },
                 {
                     "name" : "SPARK_CLIENT"
+                },
+                {
+                    "name" : "SPARK_JOBHISTORYSERVER"
                 }
             ],
             "cardinality" : "1"
