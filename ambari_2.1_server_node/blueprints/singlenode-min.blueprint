@@ -50,10 +50,7 @@
                     "name" : "HIVE_SERVER"
                 },
                 {
-                    "name" : "SPARK_CLIENT"
-                },
-                {
-                    "name" : "SPARK_JOBHISTORYSERVER"
+                    "name" : "SPARK"
                 },
                 {
                     "name" : "SECONDARY_NAMENODE"
@@ -89,6 +86,6 @@
     "Blueprints" : {
         "blueprint_name" : "singlenode-min",
         "stack_name" : "HDP",
-        "stack_version" : "2.2"
+        "stack_version" : "2.3.2"
     }
 }
