@@ -59,10 +59,7 @@
                     "name" : "DATANODE"
                 },
                 {
-                    "name" : "SPARK_CLIENT"
-                },
-                {
-                    "name" : "SPARK_JOBHISTORYSERVER"
+                    "name" : "SPARK"
                 }
             ],
             "cardinality" : "1"
