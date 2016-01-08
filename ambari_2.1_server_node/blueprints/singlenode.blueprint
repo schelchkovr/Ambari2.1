@@ -11,16 +11,7 @@
             "name" : "all",
             "components" : [
                 {
-                    "name" : "KAFKA_BROKER"
-                },
-                {
-                    "name" : "FLUME_HANDLER"
-                },
-                {
                     "name" : "SLIDER"
-                },
-                {
-                    "name" : "KNOX_GATEWAY"
                 },
                 {
                     "name" : "PIG"
@@ -29,22 +20,10 @@
                     "name" : "HISTORYSERVER"
                 },
                 {
-                    "name" : "HBASE_REGIONSERVER"
-                },
-                {
-                    "name" : "OOZIE_CLIENT"
-                },
-                {
-                    "name" : "HBASE_CLIENT"
-                },
-                {
                     "name" : "NAMENODE"
                 },
                 {
                     "name" : "SUPERVISOR"
-                },
-                {
-                    "name" : "FALCON_SERVER"
                 },
                 {
                     "name" : "HCAT"
@@ -68,9 +47,6 @@
                     "name" : "DATANODE"
                 },
                 {
-                    "name" : "WEBHCAT_SERVER"
-                },
-                {
                     "name" : "RESOURCEMANAGER"
                 },
                 {
@@ -80,19 +56,7 @@
                     "name" : "ZOOKEEPER_CLIENT"
                 },
                 {
-                    "name" : "STORM_UI_SERVER"
-                },
-                {
-                    "name" : "HBASE_MASTER"
-                },
-                {
                     "name" : "HIVE_SERVER"
-                },
-                {
-                    "name" : "OOZIE_SERVER"
-                },
-                {
-                    "name" : "FALCON_CLIENT"
                 },
                 {
                     "name" : "METRICS_COLLECTOR"
@@ -114,9 +78,6 @@
                 },
                 {
                     "name" : "SPARK_JOBHISTORYSERVER"
-                },
-                {
-                    "name" : "SQOOP"
                 },
                 {
                     "name" : "YARN_CLIENT"
