@@ -7,9 +7,9 @@ fi
 
 BLUEPRINT_BASE=$1
 
-curl --user admin:admin -H 'X-Requested-By:HortonworksUniverity' -X PUT http://localhost:8080/api/v1/stacks/HDP/versions/2.2/operating_systems/redhat6/repositories/HDP-2.2 -d @/root/repos/hdp.repo
+curl --user admin:admin -H 'X-Requested-By:HortonworksUniverity' -X PUT http://localhost:8080/api/v1/stacks/HDP/versions/2.3/operating_systems/redhat6/repositories/HDP-2.3 -d @/root/repos/hdp.repo
 
-curl --user admin:admin -H 'X-Requested-By:HortonworksUniverity' -X PUT http://localhost:8080/api/v1/stacks/HDP/versions/2.2/operating_systems/redhat6/repositories/HDP-UTILS-1.1.0.20 -d @/root/repos/hdputils.repo
+curl --user admin:admin -H 'X-Requested-By:HortonworksUniverity' -X PUT http://localhost:8080/api/v1/stacks/HDP/versions/2.3/operating_systems/redhat6/repositories/HDP-UTILS-1.1.0.20 -d @/root/repos/hdputils.repo
 
 curl --user admin:admin -H 'X-Requested-By:HortonworksUniverity' -X POST http://localhost:8080/api/v1/blueprints/$BLUEPRINT_BASE -d @/root/blueprints/${BLUEPRINT_BASE}.blueprint
 curl --user admin:admin -H 'X-Requested-By:HortonworksUniversity' -X POST http://localhost:8080/api/v1/clusters/$BLUEPRINT_BASE -d @/root/blueprints/${BLUEPRINT_BASE}.hostmapping
