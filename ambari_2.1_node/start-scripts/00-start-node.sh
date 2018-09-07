@@ -6,8 +6,8 @@ chkconfig ntpd on
 /etc/init.d/sshd start
 /etc/init.d/ntpd start
 
-echo never > /sys/kernel/mm/redhat_transparent_hugepage/defrag
-echo never > /sys/kernel/mm/redhat_transparent_hugepage/enabled
+echo never > /sys/kernel/mm/transparent_hugepage/defrag
+echo never > /sys/kernel/mm/transparent_hugepage/enabled
 
 # Replace /etc/hosts file
 umount /etc/hosts
